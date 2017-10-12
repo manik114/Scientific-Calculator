@@ -6,7 +6,7 @@ public class manik {
 		System.out.println("Enter Your Choice");
 		while(ck)
 		{
-			System.out.println("Enter 1 for adding,subtracting,multiplication and division");
+			System.out.println("Enter 1 for adding,subtracting,multiplication and division and exponent");
 			System.out.println("Enter 2 for using Trigonometric function");
 			System.out.println("Enter 3 for logarithomic functions");
 			Scanner in=new Scanner(System.in);

@@ -8,6 +8,8 @@ public class four_Operations {
 		while(ck)
 		{
 			System.out.println("Enter a for add s for subtract m for multiplication and d for division");
+			
+			System.out.println("Enter p for exponent");
 			String operation_Ckeck;
 			Scanner in=new Scanner(System.in);
 			operation_Ckeck=in.nextLine();
@@ -20,7 +22,7 @@ public class four_Operations {
 				System.out.println(a+b);
 			}
 			
-			if("s".equals(operation_Ckeck))
+			else if("s".equals(operation_Ckeck))
 			{
 				System.out.println("Enter two number to subtract");
 				int a,b;
@@ -29,7 +31,7 @@ public class four_Operations {
 				System.out.println(a-b);
 			}
 			
-			if("m".equals(operation_Ckeck))
+			else if("m".equals(operation_Ckeck))
 			{
 				System.out.println("Enter two number to multiply");
 				int a,b;
@@ -38,7 +40,7 @@ public class four_Operations {
 				System.out.println(a*b);
 			}
 			
-			if("d".equals(operation_Ckeck))
+			else if("d".equals(operation_Ckeck))
 			{
 				System.out.println("Enter two number to divide");
 				int a,b;
@@ -46,13 +48,19 @@ public class four_Operations {
 				b=in.nextInt();
 				System.out.println(a/b);
 			}
+			else if("p".equals(operation_Ckeck))
+			{
+				System.out.println("Enter two number");
+				int a=in.nextInt();
+				int b=in.nextInt();
+				System.out.println(Math.pow(a, b));
+			}
 			operation_Ckeck=in.nextLine();
 			
 			System.out.println("If ended this type of operation then type e to exit this class");
 			operation_Ckeck=in.nextLine();
 			if("e".equals(operation_Ckeck))
 				ck=false;
-			
 		}
 	}
 }
